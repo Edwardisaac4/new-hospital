@@ -8,6 +8,10 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <title>Hospital Management Website</title>
   </head>
@@ -31,28 +35,126 @@
     </header>
 
     <!-- main home section -->
-    <section class="main-home">
-      <div class="home">
-        <div class="home-left">
-          <span>Welcome To Our Hospital</span>
-          <h2
-            >We Care About Your Health <br />
-            Your Health Our Priority</h2>
-          >
-          <p class="lorem"
-            >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est,
-            omnis dolores quae pariatur asperiores temporibus odio mollitia.
-            Blanditiis in neque, fugiat nihil rem qui exercitationem illo, quo
-            earum aliquid perferendis.</p
-          >
+    <div class="main-home">
+      <div class="swiper-container home-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="home">
+              <div class="home-left">
+                <span>Welcome To Our Hospital</span>
+                <h2>
+                  We Care About Your Health <br />
+                  Your Health Our Priority
+                </h2>
+                <p class="lorem">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est,
+                  omnis dolores quae pariatur asperiores temporibus odio mollitia.
+                  Blanditiis in neque, fugiat nihil rem qui exercitationem illo, quo
+                  earum aliquid perferendis.
+                </p>
+                <div class="home-btn">
+                  <a href="">Make An Appointment</a>
+                  <a href="" class="btn-second">Read More</a>
+                </div>
+              </div>
+              <div class="home-right">
+                <img src="images/about4.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="home">
+              <div class="home-left">
+                <span>Expert Medical Services</span>
+                <h2>
+                  State-of-the-Art Technology <br />
+                  Compassionate Care for All Patients
+                </h2>
+                <p class="lorem">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est,
+                  omnis dolores quae pariatur asperiores temporibus odio mollitia.
+                  Blanditiis in neque, fugiat nihil rem qui exercitationem illo, quo
+                  earum aliquid perferendis.
+                </p>
+                <div class="home-btn">
+                  <a href="">Our Services</a>
+                  <a href="" class="btn-second">Contact Us</a>
+                </div>
+              </div>
+              <div class="home-right">
+                <img src="images/about4.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="home">
+              <div class="home-left">
+                <span>24/7 Emergency Services</span>
+                <h2>
+                  Always Ready to Help <br />
+                  Your Trusted Partner in Health
+                </h2>
+                <p class="lorem">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est,
+                  omnis dolores quae pariatur asperiores temporibus odio mollitia.
+                  Blanditiis in neque, fugiat nihil rem qui exercitationem illo, quo
+                  earum aliquid perferendis.
+                </p>
+                <div class="home-btn">
+                  <a href="">Emergency Call</a>
+                  <a href="" class="btn-second">Learn More</a>
+                </div>
+              </div>
+              <div class="home-right">
+                <img src="images/her1.png" alt="" />
+              </div>
+            </div>
+          </div>
         </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Navigation -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
 
-        <div class="home-right">
-            <img src="images/about4.png" alt="">
+    <!-- main home section end -->
+
+    <!-- main technology section -->
+    <div class="technology">
+      <div class="main-tech">
+        <div class="inner-tech">
+          <i class="bx bx-book-heart"></i>
+          <h2>Make An Appointment</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+            quod.
+          </p>
+          <a href="#" class="read-more-btn">Read More</a>
+        </div>
+        <div class="inner-tech">
+          <i class="bx bx-plus-medical"></i>
+          <h2>Health Solutions</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+            quod.
+          </p>
+          <a href="#" class="read-more-btn">Read More</a>
+        </div>
+        <div class="inner-tech">
+          <i class="bx bx-pulse"></i>
+          <h2>24/7 Full Support</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+            quod.
+          </p>
+          <a href="#" class="read-more-btn">Read More</a>
         </div>
       </div>
-    </section>
-
+    </div>
+    <!-- main technology section end -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="index.js"></script>
   </body>
 </html>

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
   --main-color: hsl(211, 86%, 51%);
@@ -16,6 +16,7 @@
   text-decoration: none;
   text-transform: capitalize;
   transition: all 0.2s linear;
+  font-family: "inter", sans-serif;
 }
 
 html {
@@ -24,8 +25,9 @@ html {
   overflow-x: hidden;
   scroll-padding-top: 6rem;
 }
+
 /*HEEADER STYLING*/
-header{
+header {
   position: fixed;
   width: 100%;
   top: 0;
@@ -35,20 +37,20 @@ header{
   right: 0;
   align-items: center;
   padding: 1rem 7%;
-  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   z-index: 1000;
   background-color: white;
 }
 
-.logo{
+.logo {
   width: 170px;
 }
 
-.logo img{
+.logo img {
   width: 100%;
 }
 
-.navlinks a{
+.navlinks a {
   font-size: 1.4rem;
   text-decoration: none;
   color: var(--text-color);
@@ -57,12 +59,12 @@ header{
   transition: 0.5s;
 }
 
-.navlinks a:hover{
+.navlinks a:hover {
   color: var(--main-color);
 }
 
-.navlinks a::after{
-  content: '';
+.navlinks a::after {
+  content: "";
   position: absolute;
   width: 0;
   height: 0.3rem;
@@ -73,11 +75,11 @@ header{
   transition: 0.5s;
 }
 
-.navlinks a:hover::after{
+.navlinks a:hover::after {
   width: 100%;
 }
 
-.btn{
+.btn {
   padding: 1rem;
   color: var(--text-color);
   border: 0.25rem solid var(--main-color);
@@ -85,11 +87,11 @@ header{
   font-size: 1.4rem;
 }
 
-.btn:hover{
+.btn:hover {
   color: var(--main-color);
 }
 
-.icon{
+.icon {
   font-size: 2.5rem;
   color: var(--text-color);
   cursor: pointer;
@@ -97,14 +99,16 @@ header{
   display: none;
 }
 
-.icon:hover{
+.icon:hover {
   color: var(--main-color);
 }
+
 /*HEADER STYLING ENDS*/
 
+/* SLIDER STYLES START */
 /*MAIN BODY STYLING*/
-.main-home{
-  padding: 2rem 7%;
+.main-home {
+  padding: 10rem 7%;
   background-image: url(images/blurbg1.jpg);
   width: 100%;
   min-height: 100vh;
@@ -113,58 +117,186 @@ header{
   background-repeat: no-repeat;
 }
 
-.home{
+.home {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 6rem;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
-.home .home-left{
+.home .home-left {
   flex: 1 1 35rem;
 }
 
-.home .home-right img{
+.home .home-right img {
   width: 100%;
 }
 
-.home .home-right{
+.home .home-right {
   flex: 1 1 45rem;
 }
 
-.home .home-left span{
+.home .home-left span {
   font-size: 1.7rem;
   color: var(--main-color);
   padding: 1rem 0;
   font-weight: bolder;
 }
 
-.home .home-left h2{
-  font-size: 45px;
+.home .home-left h2 {
+  font-size: 55px;
+  margin: 1rem 0;
+  line-height: 1.2;
+  text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.home .home-left p {
+  font-size: 1.8rem;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.home-btn {
+  display: flex;
+  align-items: center;
+  margin-top: 1.5rem;
+  gap: 2rem;
+}
+
+.home-btn a {
+  display: inline-block;
+  padding: 1.5rem 3rem;
+  background-color: var(--main-color);
+  color: white;
+  font-size: 1.6rem;
+  border-radius: 1rem;
+  transition: 0.5s ease;
+  cursor: pointer;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.home-btn a:hover {
+  background-color: var(--secondary-color);
+}
+
+.btn-second:hover {
+  background-color: var(--main-color) !important;
+  color: white !important;
+}
+
+.btn-second {
+  background-color: transparent !important;
+  border: 0.2rem solid var(--main-color) !important;
+  color: var(--main-color) !important;
+}
+.home .home-right img {
+  width: 100%;
+  margin-top: 2rem;
+  mix-blend-mode: difference;
+}
+/* SLIDER STYLES END */
+
+.technology {
+  padding: 2rem 7%;
+  background-color: transparent;
+  margin-top: -10rem;
+  position: relative;
+  z-index: 1;
+}
+
+.main-tech {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.inner-tech {
+  flex: 1 1 30rem;
+  padding: 2rem;
+  background-image: url(images/backgroung-pattern-1.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 0.5rem;
+  text-align: center;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  transition: 0.5s ease;
+}
+
+.inner-tech:hover {
+  transform: translateY(-1rem);
+  background-color: rgba(40, 120, 200, 0.8);
+}
+
+.inner-tech:hover .read-more-btn {
+  background-color: var(--secondary-color);
+  color: #fff;
+  border-color: var(--secondary-color);
+}
+
+.inner-tech:hover i {
+  color: #fff;
+}
+
+.inner-tech:hover h2 {
+  color: var(--text-color);
+}
+
+.inner-tech:hover p {
+  color: var(--text-color);
+}
+
+.inner-tech i {
+  font-size: 4rem;
+  color: var(--main-color);
+}
+
+.inner-tech h2 {
+  font-size: 2rem;
+  color: #000;
   margin: 1rem 0;
 }
 
-.home .home-left p{
-  font-size: 1.7rem;
-  color: var(--text-color);
+.inner-tech p {
+  font-size: 1.4rem;
+  color: #000;
+  line-height: 1.6;
+}
 
+.read-more-btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border: 0.2rem solid var(--main-color);
+  border-radius: 0.5rem;
+  color: var(--main-color);
+  font-size: 1.4rem;
+  margin-top: 1rem;
+  transition: 0.5s ease;
+}
+
+.read-more-btn:hover {
+  background-color: var(--main-color);
+  color: #fff;
 }
 
 /* media queries  */
 @media (max-width: 760px) {
-  html{
+  html {
     font-size: 55%;
   }
 
-  .icon{
+  .icon {
     display: initial;
   }
 
-  .btn{
+  .btn {
     display: none;
   }
 
-  .navlinks{
+  .navlinks {
     position: absolute;
     top: 100%;
     left: 0;
@@ -176,14 +308,26 @@ header{
     transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1), opacity 0.5s ease;
   }
 
-  .navlinks.open{
+  .navlinks.open {
     transform: translateX(0);
     opacity: 1;
   }
 
-  .navlinks a{
+  .navlinks a {
     display: block;
     margin: 2rem;
     padding: 1rem;
+  }
+
+  .home .home-left h2 {
+    font-size: 45px;
+  }
+
+  .home .home-left {
+    padding: 2rem;
+  }
+
+  .home-btn {
+    text-align: center;
   }
 }
