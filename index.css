@@ -192,8 +192,7 @@ header {
 }
 .home .home-right img {
   width: 100%;
-  margin-top: 2rem;
-  mix-blend-mode: difference;
+  margin-top: -1rem;
 }
 /* SLIDER STYLES END */
 
@@ -495,10 +494,62 @@ header {
   padding: 1.5rem ;
 }
 
+.reviews{
+  width: 100%;
+  padding: 3rem 7%;
+}
 
+.review-head{
+  text-align: center;
+}
 
+.review-head h1{
+  font-size: 40px;
+  color: var(--text-color);
+  padding-bottom: 2rem;
+}
 
+.review-content{
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
 
+.review-box{
+  flex: 1 1 300px;
+  padding: 1rem;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+.review-box img{
+  width: 150px;
+  border-radius: 100%;
+}
+
+.review-box h2{
+  font-size: 2rem;
+  color: var(--text-color);
+  padding-top: 2rem;
+}
+
+.review-box p{
+  font-size: 1.4rem;
+  color: var(--text-color);
+  line-height: 1.6;
+  padding: 1rem 1rem;
+  padding-bottom: 1rem;
+}
+
+.review-star i{
+  font-size: 1.5rem;
+  color: var(--third-color);
+}
+
+.review-star{
+  padding: 1rem 0;
+}
 
 /* media queries  */
 @media (max-width: 760px) {
@@ -555,5 +606,83 @@ header {
 
   .about-right h2 {
     font-size: 25px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  html {
+    font-size: 58%;
+  }
+
+  .home .home-left h2 {
+    font-size: 50px;
+  }
+
+  .home .home-left {
+    padding: 1rem;
+  }
+
+  .technology {
+    margin-top: -5rem;
+  }
+
+  .about-right h2 {
+    font-size: 28px;
+  }
+
+  .dct-heading {
+    font-size: 35px;
+  }
+
+  .services-head h2 {
+    font-size: 35px;
+  }
+
+  .review-head h1 {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 50%;
+  }
+
+  .home .home-left h2 {
+    font-size: 40px;
+  }
+
+  .home .home-left {
+    padding: 1rem;
+  }
+
+  .technology {
+    margin-top: 0;
+  }
+
+  .about-right h2 {
+    font-size: 22px;
+  }
+
+  .dct-heading {
+    font-size: 30px;
+  }
+
+  .services-head h2 {
+    font-size: 30px;
+  }
+
+  .review-head h1 {
+    font-size: 30px;
+  }
+
+  .home-btn {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .home-btn a {
+    width: 100%;
+    text-align: center;
   }
 }
